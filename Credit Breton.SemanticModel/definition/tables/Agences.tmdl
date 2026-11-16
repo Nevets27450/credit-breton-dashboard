@@ -1,0 +1,61 @@
+table Agences
+	lineageTag: 5237c483-d36f-4a82-b644-38e871351de0
+
+	column 'Numéro d''agence'
+		dataType: int64
+		formatString: 0
+		lineageTag: 312f56d9-9031-4d01-bcc2-6242ac0132a2
+		summarizeBy: none
+		sourceColumn: Numéro d'agence
+
+		annotation SummarizationSetBy = Automatic
+
+	column Localisation
+		dataType: string
+		lineageTag: 5d6a7ec3-91a1-4c1c-b381-af96ba24bf6f
+		summarizeBy: none
+		sourceColumn: Localisation
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ville
+		dataType: string
+		lineageTag: 3aec4ea9-6617-4710-b0a6-53d025cb5066
+		summarizeBy: none
+		sourceColumn: Ville
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Latitude extraite des coordonnées fournies dans le fichier source.
+	column Latitude
+		dataType: double
+		formatString: 0.000000
+		lineageTag: 87a0aa08-b468-4fe0-9ae6-e033774a0866
+		dataCategory: Latitude
+		summarizeBy: none
+		sourceColumn: Latitude
+
+	/// Longitude extraite des coordonnées fournies dans le fichier source.
+	column Longitude
+		dataType: double
+		formatString: 0.000000
+		lineageTag: 99315408-eca0-42d2-b612-5b2ad8f7f42b
+		dataCategory: Longitude
+		summarizeBy: none
+		sourceColumn: Longitude
+
+	partition Agences = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents(CheminSource), null, true),
+				    Agences_Sheet = Source{[Item="Agences",Kind="Sheet"]}[Data],
+				    #"En-têtes promus" = Table.PromoteHeaders(Agences_Sheet, [PromoteAllScalars=true]),
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"Numéro d'agence", Int64.Type}, {"Localisation", type text}, {"Ville", type text}}),
+				    #"Latitude ajoutée" = Table.AddColumn(#"Type modifié", "Latitude", each Number.FromText(Text.Trim(Text.BeforeDelimiter([Localisation], ",")), "en-US"), type number),
+				    #"Longitude ajoutée" = Table.AddColumn(#"Latitude ajoutée", "Longitude", each Number.FromText(Text.Trim(Text.AfterDelimiter([Localisation], ",")), "en-US"), type number)
+				in
+				    #"Longitude ajoutée"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,61 @@
+table 'Situation pro'
+	lineageTag: fd74658f-4a58-4518-bc2d-168a1811730f
+
+	column 'Numéro client'
+		dataType: int64
+		formatString: 0
+		lineageTag: 36a1122f-d52b-4b74-9fa5-176f82e47d5b
+		summarizeBy: none
+		sourceColumn: Numéro client
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Catégorie socioprofessionnelle'
+		dataType: string
+		lineageTag: 1549ad9d-40fe-48be-b7b0-49721851c755
+		summarizeBy: none
+		sourceColumn: Catégorie socioprofessionnelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut d''emploi'
+		dataType: string
+		lineageTag: f04221e1-97b1-4e40-bd20-ea75ade973f2
+		summarizeBy: none
+		sourceColumn: Statut d'emploi
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Régularité des revenus'
+		dataType: string
+		lineageTag: befd2d63-64f2-4e41-b8b5-a274661b579c
+		summarizeBy: none
+		sourceColumn: Régularité des revenus
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Revenu mensuel moyen'
+		dataType: double
+		lineageTag: d27a286a-cb6a-4dbc-8c34-9884b66f152b
+		summarizeBy: none
+		sourceColumn: Revenu mensuel moyen
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Situation pro' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents(CheminSource), null, true),
+				    #"Situation pro_Sheet" = Source{[Item="Situation pro",Kind="Sheet"]}[Data],
+				    #"En-têtes promus" = Table.PromoteHeaders(#"Situation pro_Sheet", [PromoteAllScalars=true]),
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"Numéro client", Int64.Type}, {"Catégorie socioprofessionnelle", type text}, {"Statut d'emploi", type text}, {"Régularité des revenus", type text}, {"Revenu mensuel moyen", type number}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,247 @@
+table 'Demandes de pret'
+	lineageTag: 6f5cb4c2-7799-4b01-a44c-38f5c96b14a9
+
+	/// Nombre de demandes
+	measure 'Nombre de demandes' = COUNTROWS('Demandes de pret')
+		formatString: 0
+		displayFolder: Volume
+		lineageTag: d3f7ebe2-1a7b-487c-8ea7-4d1e63b2b659
+
+	/// Nombre de clients
+	measure 'Nombre de clients' = DISTINCTCOUNT('Demandes de pret'[Numéro client])
+		formatString: 0
+		displayFolder: Volume
+		lineageTag: d0283d7e-a004-4600-83f2-2004ffd33682
+
+	/// Demandes accordées
+	measure 'Demandes accordées' = CALCULATE([Nombre de demandes], KEEPFILTERS('Demandes de pret'[Accord] = "O"))
+		formatString: 0
+		displayFolder: Décisions
+		lineageTag: cd928a38-9cbe-4f43-97c9-1162b5fd8410
+
+	/// Demandes refusées
+	measure 'Demandes refusées' = CALCULATE([Nombre de demandes], KEEPFILTERS('Demandes de pret'[Accord] = "N"))
+		formatString: 0
+		displayFolder: Décisions
+		lineageTag: 9096911b-9761-4537-996f-a622b21160bc
+
+	/// Demandes sans décision
+	measure 'Demandes sans décision' = CALCULATE([Nombre de demandes], KEEPFILTERS(ISBLANK('Demandes de pret'[Accord])))
+		formatString: 0
+		displayFolder: Décisions
+		lineageTag: a78c5106-412f-43f7-89d1-7006cb945bd4
+
+	/// Demandes accordées / demandes avec décision O ou N. Sans décision exclues du dénominateur.
+	measure 'Taux d''accord' = DIVIDE([Demandes accordées], [Demandes accordées]+[Demandes refusées])
+		formatString: 0.0%
+		displayFolder: Décisions
+		lineageTag: bfa76580-a137-433d-ae7a-9f6eedc1a2cf
+
+	/// Montant des opérations
+	measure 'Montant des opérations' = SUM('Demandes de pret'[Montant opération])
+		formatString: #,0.00 "€"
+		displayFolder: Montants
+		lineageTag: 3cde9006-c26b-4469-bb0b-f941846aa2e2
+
+	/// Financement demandé
+	measure 'Financement demandé' = SUM('Demandes de pret'[Montant_Prêté])
+		formatString: #,0.00 "€"
+		displayFolder: Montants
+		lineageTag: ee0747ae-3ce2-44d6-93bd-bc621daf7dce
+
+	/// Montant opération moins apport pour les seules demandes accordées ; ne représente pas un décaissement.
+	measure 'Financement accordé' = CALCULATE([Financement demandé], KEEPFILTERS('Demandes de pret'[Accord] = "O"))
+		formatString: #,0.00 "€"
+		displayFolder: Montants
+		lineageTag: e08f89d3-360b-4b86-a37d-81cf42cbc888
+
+	/// Délai moyen de clôture (jours)
+	measure 'Délai moyen de clôture (jours)' = AVERAGEX(FILTER('Demandes de pret', NOT ISBLANK('Demandes de pret'[Date de cloture]) && 'Demandes de pret'[Date de cloture]>='Demandes de pret'[Date de demande]), DATEDIFF('Demandes de pret'[Date de demande],'Demandes de pret'[Date de cloture],DAY))
+		formatString: 0.0
+		displayFolder: Délais
+		lineageTag: 9735c5cc-039c-4beb-9dab-f942814306ed
+
+	/// Demandes par date de clôture ; la relation de date de demande est désactivée par USERELATIONSHIP.
+	measure 'Demandes clôturées' = CALCULATE([Nombre de demandes], USERELATIONSHIP('Calendrier'[Date], 'Demandes de pret'[Date de cloture]))
+		formatString: 0
+		displayFolder: Suivi
+		lineageTag: c755f7e1-ff40-466a-8eec-3975a4082891
+
+	/// Étendue des dates de demande présentes dans le modèle ; indépendante des sélections.
+	measure 'Période couverte' = VAR Debut = CALCULATE(MIN('Demandes de pret'[Date de demande]), REMOVEFILTERS()) VAR Fin = CALCULATE(MAX('Demandes de pret'[Date de demande]), REMOVEFILTERS()) RETURN "Données : " & FORMAT(Debut,"dd/MM/yyyy") & " au " & FORMAT(Fin,"dd/MM/yyyy")
+		formatString: General
+		displayFolder: Suivi
+		lineageTag: 4cc0c869-e3dc-4afe-af8c-df71fd5b631f
+
+	/// Minimum de l’échelle de taux, aucune cible métier implicite.
+	measure 'Borne taux minimum' = 0
+		formatString: 0%
+		isHidden
+		lineageTag: a2b84984-7b42-4005-bb5d-4a6a1ea22e67
+
+	/// Maximum de l’échelle de taux.
+	measure 'Borne taux maximum' = 1
+		formatString: 0%
+		isHidden
+		lineageTag: 04b1645a-8078-4903-ab11-1ce9234e04d8
+
+	/// Cinq dernières demandes dans la sélection, tri date puis identifiant.
+	measure 'Afficher dernière demande' = VAR Identifiant = SELECTEDVALUE('Demandes de pret'[Numéro demande de prêt]) VAR Dernieres = TOPN(5, ALLSELECTED('Demandes de pret'), 'Demandes de pret'[Date de demande], DESC, 'Demandes de pret'[Numéro demande de prêt], DESC) RETURN IF(NOT ISBLANK(Identifiant) && CONTAINS(Dernieres, 'Demandes de pret'[Numéro demande de prêt], Identifiant), 1, 0)
+		formatString: 0
+		isHidden
+		lineageTag: d4c68bdd-119a-4f08-b840-7de785caf8cb
+
+	column 'Numéro demande de prêt'
+		dataType: int64
+		formatString: 0
+		lineageTag: efccdde7-a885-47eb-8b4f-d1570309d44d
+		summarizeBy: none
+		sourceColumn: Numéro demande de prêt
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Montant opération'
+		dataType: double
+		formatString: #,0.00 "€"
+		lineageTag: e05d36a3-eeb5-4751-a8f1-82f9651f5e0b
+		summarizeBy: sum
+		sourceColumn: Montant opération
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Durée
+		dataType: int64
+		formatString: 0 "mois"
+		lineageTag: 0ea9df6e-e7c8-4ea3-9fcf-604e820051c0
+		summarizeBy: none
+		sourceColumn: Durée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de demande'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 98f12d36-cc08-4fb0-9cc8-21cc780ae6a3
+		summarizeBy: none
+		sourceColumn: Date de demande
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Date de cloture'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 09abe92d-94df-4861-996e-ede8e33229c9
+		summarizeBy: none
+		sourceColumn: Date de cloture
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Numéro client'
+		dataType: int64
+		formatString: 0
+		lineageTag: 93ec83ae-d65e-4f78-8cd0-7a4ac1467693
+		summarizeBy: none
+		sourceColumn: Numéro client
+
+		annotation SummarizationSetBy = Automatic
+
+	column Accord
+		dataType: string
+		lineageTag: b6c7bdc2-e187-496b-a05e-42859f97c56b
+		summarizeBy: none
+		sourceColumn: Accord
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Numéro d''agence'
+		dataType: int64
+		formatString: 0
+		lineageTag: 79ed9557-3004-4483-9109-330dd7f4a5ce
+		summarizeBy: none
+		sourceColumn: Numéro d'agence
+
+		annotation SummarizationSetBy = Automatic
+
+	column Apport
+		dataType: double
+		formatString: #,0.00 "€"
+		lineageTag: 66494869-3d7a-4796-83be-b5b257621b84
+		summarizeBy: sum
+		sourceColumn: Apport
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Montant_Prêté = 'Demandes de pret'[Montant opération]-'Demandes de pret'[Apport]
+		formatString: #,0.00 "€"
+		lineageTag: 3396a7b8-b098-406b-8b26-b7c8e5c3d8b0
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Score_emprunteur = SWITCH([Motif de la règle], "Données à vérifier", "À VÉRIFIER", "Critères satisfaits", "ACCEPTE", "REFUS")
+		lineageTag: d4ae5a6e-194a-4b73-9942-aa82d44ada4c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Âge révolu à la date de demande, stable lors des actualisations.
+	column 'Âge à la demande' = VAR Naissance = RELATED('Situation famille'[Date de naissance]) VAR Demande = 'Demandes de pret'[Date de demande] RETURN IF(ISBLANK(Naissance) || ISBLANK(Demande) || Demande < Naissance, BLANK(), YEAR(Demande)-YEAR(Naissance)-IF(MONTH(Demande)*100+DAY(Demande)<MONTH(Naissance)*100+DAY(Naissance),1,0))
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d18e06a-3ebf-49ea-8160-7a7c926a078e
+		summarizeBy: none
+
+	column Décision = SWITCH('Demandes de pret'[Accord], "O", "Accordé", "N", "Refusé", BLANK(), "Sans décision", "À vérifier")
+		dataType: string
+		lineageTag: 19e37233-3aa1-4916-a6aa-eeb0168f8630
+		summarizeBy: none
+
+	column 'Motif de la règle' =
+			VAR Age = [Âge à la demande]
+			VAR Revenu = RELATED('Situation pro'[Revenu mensuel moyen])
+			VAR Regularite = RELATED('Situation pro'[Régularité des revenus])
+			VAR Enfants = RELATED('Situation famille'[Nombre d'enfants à charge])
+			VAR Duree = [Durée]
+			RETURN SWITCH(TRUE(),
+			 ISBLANK(Age) || ISBLANK(Revenu) || Revenu <= 0 || ISBLANK(Regularite) || ISBLANK(Enfants) || Enfants < 0 || ISBLANK(Duree) || Duree <= 0 || ISBLANK([Apport]) || ISBLANK([Montant opération]) || [Montant_Prêté] < 0, "Données à vérifier",
+			 Age >= 82, "Âge à la demande ≥ 82 ans",
+			 Regularite = "3 : Très irréguliers", "Revenus très irréguliers",
+			 DIVIDE([Montant_Prêté],Duree) > DIVIDE(Revenu,3+Enfants), "Seuil de remboursement dépassé",
+			 "Critères satisfaits")
+		dataType: string
+		lineageTag: 11dd1c53-ba58-44fd-a52d-4fb8403046ee
+		summarizeBy: none
+
+	column 'Écart décision / règle' = SWITCH(TRUE(), ISBLANK([Accord]), "Sans décision", [Score_emprunteur] = "À VÉRIFIER", "À vérifier", ([Accord] = "O" && [Score_emprunteur] = "ACCEPTE") || ([Accord] = "N" && [Score_emprunteur] = "REFUS"), "Concordant", "Écart à analyser")
+		dataType: string
+		lineageTag: 99b9fcc8-c900-4f22-bf2c-f9d09a580d69
+		summarizeBy: none
+
+	partition 'Demandes de pret' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents(CheminSource), null, true),
+				    #"Demandes de pret_Sheet" = Source{[Item="Demandes de pret",Kind="Sheet"]}[Data],
+				    #"En-têtes promus" = Table.PromoteHeaders(#"Demandes de pret_Sheet", [PromoteAllScalars=true]),
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"Numéro demande de prêt", Int64.Type}, {"Montant opération", type number}, {"Durée", Int64.Type}, {"Date de demande", type date}, {"Date de cloture", type date}, {"Numéro client", Int64.Type}, {"Accord", type text}, {"Numéro d'agence", Int64.Type}}),
+				    #"Requêtes fusionnées" = Table.NestedJoin(#"Type modifié", {"Numéro demande de prêt"}, Apport, {"Numéro demande de prêt"}, "Apport", JoinKind.LeftOuter),
+				    #"Apport développé" = Table.ExpandTableColumn(#"Requêtes fusionnées", "Apport", {"Apport"}, {"Apport.1"}),
+				    #"Colonnes renommées" = Table.RenameColumns(#"Apport développé",{{"Apport.1", "Apport"}})
+				in
+				    #"Colonnes renommées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

@@ -1,0 +1,4313 @@
+cultureInfo fr-FR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "apport": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Apport"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "apport": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "apport.numéro_demande_de_prêt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Apport",
+			          "ConceptualProperty": "Numéro demande de prêt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "numéro demande de prêt": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "apport.apport": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Apport",
+			          "ConceptualProperty": "Apport"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "apport": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "agence": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agences"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "agence": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "agence.numéro_dagence": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agences",
+			          "ConceptualProperty": "Numéro d'agence"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numéro d'agence": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "agence.localisation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agences",
+			          "ConceptualProperty": "Localisation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "localisation": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "agence.ville": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agences",
+			          "ConceptualProperty": "Ville"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ville": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandes de pret": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "demande de pret": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.numéro_demande_de_prêt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Numéro demande de prêt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numéro demande de prêt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "N° Prêt": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.montant_opération": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Montant opération"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "montant opération": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.durée": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Durée"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "durée": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.date_de_demande": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Date de demande"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date de demande": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "moment de demande": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period de demande": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "demandes_de_pret.date_de_cloture": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Date de cloture"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date de cloture": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "moment de cloture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period de cloture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "demandes_de_pret.numéro_client": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Numéro client"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "numéro client": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "numéro customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro punter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro purchaser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro regular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.accord": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Accord"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "accord": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "consensus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "harmony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "concurrence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "unity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "agreement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "solidarity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "treaty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "settlement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "pact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "deal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.numéro_dagence": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Numéro d'agence"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "numéro d'agence": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.apport": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Apport"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "apport": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.montant_prêté": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Montant_Prêté"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "montant prêté": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Montant_Prêté": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Montant": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.score_emprunteur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Score_emprunteur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "score emprunteur": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Score_emprunteur": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.âge_à_la_demande": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Âge à la demande"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "âge à la demande": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.décision": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Décision"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "décision": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.motif_de_la_règle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Motif de la règle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "motif de la règle": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.écart_décision___règle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Écart décision / règle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "écart décision / règle": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "écart décision": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "écart décision règle": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "règle": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.nombre_de_demandes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Nombre de demandes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre de demandes": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.nombre_de_clients": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Nombre de clients"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre de clients": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nombre de customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "nombre de patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "nombre de consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "nombre de clientele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "nombre de regular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "nombre de trade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "nombre de shoppers": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "nombre de user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "nombre de buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "nombre de punter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.demandes_accordées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Demandes accordées"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandes accordées": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.demandes_refusées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Demandes refusées"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandes refusées": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.demandes_sans_décision": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Demandes sans décision"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandes sans décision": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.taux_daccord": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Taux d'accord"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "taux d'accord": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.montant_des_opérations": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Montant des opérations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "montant des opérations": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.financement_demandé": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Financement demandé"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "financement demandé": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.financement_accordé": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Financement accordé"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "financement accordé": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.délai_moyen_de_clôture_jours": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Délai moyen de clôture (jours)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "délai moyen de clôture (jours)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "délai moyen de clôture": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.demandes_clôturées": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Demandes clôturées"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demandes clôturées": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.période_couverte": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Période couverte"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "période couverte": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.borne_taux_minimum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Borne taux minimum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "borne taux minimum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "borne taux iota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "borne taux modicum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "borne taux smidgeon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "borne taux smidgen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "borne taux least": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "borne taux jot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "borne taux speck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.borne_taux_maximum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Borne taux maximum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "borne taux maximum": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "demandes_de_pret.afficher_dernière_demande": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Demandes de pret",
+			          "ConceptualProperty": "Afficher dernière demande"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "afficher dernière demande": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situation_famille": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation famille"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situation famille": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situation_famille.ID_client": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation famille",
+			          "ConceptualProperty": "ID_Client"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID client": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ID_Client": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "client": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "id customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "situation_famille.nom": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation famille",
+			          "ConceptualProperty": "Nom"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nom": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situation_famille.prénom": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation famille",
+			          "ConceptualProperty": "Prénom"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prénom": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situation_famille.date_de_naissance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation famille",
+			          "ConceptualProperty": "Date de naissance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date de naissance": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "moment de naissance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period de naissance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "situation_famille.situation_familliale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation famille",
+			          "ConceptualProperty": "Situation familliale"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situation familliale": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situation_famille.nombre_denfants_à_charge": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation famille",
+			          "ConceptualProperty": "Nombre d'enfants à charge"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre d'enfants à charge": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nombre d'enfant à charge": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "nombre d'enfant à custody": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "nombre d'enfant à responsibility": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "nombre d'enfant à duty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "nombre d'enfant à care": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "nombre d'enfant à control": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "nombre d'enfant à trust": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "nombre d'enfant à burden": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "nombre d'enfant à safekeeping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "nombre d'enfant à concern": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "nombre d'enfant à accusation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        }
+			      ]
+			    },
+			    "situation_famille.age_client": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation famille",
+			          "ConceptualProperty": "Age_Client"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "age client": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Age_Client": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "client": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "age customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age punter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "age purchaser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "situation_pro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation pro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situation pro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pro": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "authority": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "maven": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "state pro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "condition pro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "ace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "professional": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "expert": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "specialist": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "location pro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "position pro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "situation_pro.numéro_client": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation pro",
+			          "ConceptualProperty": "Numéro client"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numéro client": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "numéro customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro punter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro purchaser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "numéro regular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "situation_pro.catégorie_socioprofessionnelle": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation pro",
+			          "ConceptualProperty": "Catégorie socioprofessionnelle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "catégorie socioprofessionnelle": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situation_pro.statut_demploi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation pro",
+			          "ConceptualProperty": "Statut d'emploi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "statut d'emploi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situation_pro.régularité_des_revenus": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation pro",
+			          "ConceptualProperty": "Régularité des revenus"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "régularité des revenus": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situation_pro.revenu_mensuel_moyen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situation pro",
+			          "ConceptualProperty": "Revenu mensuel moyen"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "revenu mensuel moyen": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendrier": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendrier": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendrier.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "ConceptualProperty": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendrier.numéro_mois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "ConceptualProperty": "Numéro mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "numéro mois": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendrier.mois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "ConceptualProperty": "Mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mois": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendrier.annéemois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "ConceptualProperty": "Année-mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année-mois": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "année mois": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "calendrier.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "ConceptualProperty": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendrier.début_de_mois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "ConceptualProperty": "Début de mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "début de mois": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.année___trimestre___mois___jour": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "Hierarchy": "Année / trimestre / mois / jour"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année / trimestre / mois / jour": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "année trimestre mois jour": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "jour": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.année___trimestre___mois___jour.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "Hierarchy": "Année / trimestre / mois / jour",
+			          "HierarchyLevel": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.année___trimestre___mois___jour.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "Hierarchy": "Année / trimestre / mois / jour",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.année___trimestre___mois___jour.mois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "Hierarchy": "Année / trimestre / mois / jour",
+			          "HierarchyLevel": "Mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mois": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendrier.année___trimestre___mois___jour.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendrier",
+			          "Hierarchy": "Année / trimestre / mois / jour",
+			          "HierarchyLevel": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "agence.latitude": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agences",
+			          "ConceptualProperty": "Latitude"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "latitude": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "leeway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "freedom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "autonomy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "liberty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "room": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "scope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "agence.longitude": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Agences",
+			          "ConceptualProperty": "Longitude"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "longitude": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "demandes_de_pret_has_situation_famille": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "situation_famille": {
+			          "Target": {
+			            "Entity": "situation_famille"
+			          },
+			          "Nouns": [
+			            {
+			              "numéro client": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "situation_famille"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_situation_familles"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_famille"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_familles_have_demandes_de_prets"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_situation_pro": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "situation_pro": {
+			          "Target": {
+			            "Entity": "situation_pro"
+			          },
+			          "Nouns": [
+			            {
+			              "numéro client": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "situation_pro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_situation_pro"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_pro"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_pro_have_demandes_de_prets"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_agence": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "agence": {
+			          "Target": {
+			            "Entity": "agence"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "agence"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_agences"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "agence"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "agences_have_demandes_de_prets"
+			        }
+			      ]
+			    },
+			    "agence_has_longitude": {
+			      "Binding": {
+			        "ConceptualEntity": "Agences"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "agence": {
+			          "Target": {
+			            "Entity": "agence"
+			          }
+			        },
+			        "agence.longitude": {
+			          "Target": {
+			            "Entity": "agence.longitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "agence"
+			            },
+			            "Object": {
+			              "Role": "agence.longitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "agences_have_longitudes"
+			        }
+			      ]
+			    },
+			    "agence_has_latitude": {
+			      "Binding": {
+			        "ConceptualEntity": "Agences"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "agence": {
+			          "Target": {
+			            "Entity": "agence"
+			          }
+			        },
+			        "agence.latitude": {
+			          "Target": {
+			            "Entity": "agence.latitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "agence"
+			            },
+			            "Object": {
+			              "Role": "agence.latitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "agences_have_latitudes"
+			        }
+			      ]
+			    },
+			    "calendrier_has_année___trimestre___mois___jour": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "calendrier.année___trimestre___mois___jour": {
+			          "Target": {
+			            "Entity": "calendrier.année___trimestre___mois___jour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "calendrier.année___trimestre___mois___jour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_année___trimestre___mois___jour"
+			        }
+			      ]
+			    },
+			    "calendrier_has_début_de_mois": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "calendrier.début_de_mois": {
+			          "Target": {
+			            "Entity": "calendrier.début_de_mois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "calendrier.début_de_mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_début_de_moises"
+			        }
+			      ]
+			    },
+			    "calendrier_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "calendrier.trimestre": {
+			          "Target": {
+			            "Entity": "calendrier.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "calendrier.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_trimestres"
+			        }
+			      ]
+			    },
+			    "calendrier_has_annéemois": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "calendrier.annéemois": {
+			          "Target": {
+			            "Entity": "calendrier.annéemois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "calendrier.annéemois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_annéemoises"
+			        }
+			      ]
+			    },
+			    "calendrier_has_mois": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "calendrier.mois": {
+			          "Target": {
+			            "Entity": "calendrier.mois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "calendrier.mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_moises"
+			        }
+			      ]
+			    },
+			    "calendrier_has_année": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "calendrier.année": {
+			          "Target": {
+			            "Entity": "calendrier.année"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "calendrier.année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_années"
+			        }
+			      ]
+			    },
+			    "calendrier_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        },
+			        "calendrier.date": {
+			          "Target": {
+			            "Entity": "calendrier.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "calendrier.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_dates"
+			        }
+			      ]
+			    },
+			    "situation_pro_has_revenu_mensuel_moyen": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation pro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_pro": {
+			          "Target": {
+			            "Entity": "situation_pro"
+			          }
+			        },
+			        "situation_pro.revenu_mensuel_moyen": {
+			          "Target": {
+			            "Entity": "situation_pro.revenu_mensuel_moyen"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_pro"
+			            },
+			            "Object": {
+			              "Role": "situation_pro.revenu_mensuel_moyen"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_pro_have_revenu_mensuel_moyens"
+			        }
+			      ]
+			    },
+			    "situation_pro_has_régularité_des_revenus": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation pro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_pro": {
+			          "Target": {
+			            "Entity": "situation_pro"
+			          }
+			        },
+			        "situation_pro.régularité_des_revenus": {
+			          "Target": {
+			            "Entity": "situation_pro.régularité_des_revenus"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_pro"
+			            },
+			            "Object": {
+			              "Role": "situation_pro.régularité_des_revenus"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_pro_have_régularité_des_revenuses"
+			        }
+			      ]
+			    },
+			    "situation_pro_has_statut_demploi": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation pro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_pro": {
+			          "Target": {
+			            "Entity": "situation_pro"
+			          }
+			        },
+			        "situation_pro.statut_demploi": {
+			          "Target": {
+			            "Entity": "situation_pro.statut_demploi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_pro"
+			            },
+			            "Object": {
+			              "Role": "situation_pro.statut_demploi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_pro_have_statut_demplois"
+			        }
+			      ]
+			    },
+			    "situation_pro_has_catégorie_socioprofessionnelle": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation pro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_pro": {
+			          "Target": {
+			            "Entity": "situation_pro"
+			          }
+			        },
+			        "situation_pro.catégorie_socioprofessionnelle": {
+			          "Target": {
+			            "Entity": "situation_pro.catégorie_socioprofessionnelle"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_pro"
+			            },
+			            "Object": {
+			              "Role": "situation_pro.catégorie_socioprofessionnelle"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_pro_have_catégorie_socioprofessionnelles"
+			        }
+			      ]
+			    },
+			    "situation_pro_has_numéro_client": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation pro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_pro": {
+			          "Target": {
+			            "Entity": "situation_pro"
+			          }
+			        },
+			        "situation_pro.numéro_client": {
+			          "Target": {
+			            "Entity": "situation_pro.numéro_client"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_pro"
+			            },
+			            "Object": {
+			              "Role": "situation_pro.numéro_client"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_pro_have_numéro_clients"
+			        }
+			      ]
+			    },
+			    "situation_famille_has_nombre_denfants_à_charge": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation famille"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_famille": {
+			          "Target": {
+			            "Entity": "situation_famille"
+			          }
+			        },
+			        "situation_famille.nombre_denfants_à_charge": {
+			          "Target": {
+			            "Entity": "situation_famille.nombre_denfants_à_charge"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_famille"
+			            },
+			            "Object": {
+			              "Role": "situation_famille.nombre_denfants_à_charge"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_familles_have_nombre_denfants_à_charges"
+			        }
+			      ]
+			    },
+			    "situation_famille_has_situation_familliale": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation famille"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_famille": {
+			          "Target": {
+			            "Entity": "situation_famille"
+			          }
+			        },
+			        "situation_famille.situation_familliale": {
+			          "Target": {
+			            "Entity": "situation_famille.situation_familliale"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_famille"
+			            },
+			            "Object": {
+			              "Role": "situation_famille.situation_familliale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_familles_have_situation_familliales"
+			        }
+			      ]
+			    },
+			    "situation_famille_has_date_de_naissance": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation famille"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_famille": {
+			          "Target": {
+			            "Entity": "situation_famille"
+			          }
+			        },
+			        "situation_famille.date_de_naissance": {
+			          "Target": {
+			            "Entity": "situation_famille.date_de_naissance"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_famille"
+			            },
+			            "Object": {
+			              "Role": "situation_famille.date_de_naissance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_familles_have_date_de_naissances"
+			        }
+			      ]
+			    },
+			    "situation_famille_has_prénom": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation famille"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_famille": {
+			          "Target": {
+			            "Entity": "situation_famille"
+			          }
+			        },
+			        "situation_famille.prénom": {
+			          "Target": {
+			            "Entity": "situation_famille.prénom"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_famille"
+			            },
+			            "Object": {
+			              "Role": "situation_famille.prénom"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_familles_have_prénoms"
+			        }
+			      ]
+			    },
+			    "situation_famille_has_nom": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation famille"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_famille": {
+			          "Target": {
+			            "Entity": "situation_famille"
+			          }
+			        },
+			        "situation_famille.nom": {
+			          "Target": {
+			            "Entity": "situation_famille.nom"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_famille"
+			            },
+			            "Object": {
+			              "Role": "situation_famille.nom"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_familles_have_nom"
+			        }
+			      ]
+			    },
+			    "situation_famille_has_ID_client": {
+			      "Binding": {
+			        "ConceptualEntity": "Situation famille"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situation_famille": {
+			          "Target": {
+			            "Entity": "situation_famille"
+			          }
+			        },
+			        "situation_famille.ID_client": {
+			          "Target": {
+			            "Entity": "situation_famille.ID_client"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situation_famille"
+			            },
+			            "Object": {
+			              "Role": "situation_famille.ID_client"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situation_familles_have_ID_clients"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_période_couverte": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.période_couverte": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.période_couverte"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.période_couverte"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_période_couverte"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_demandes_clôturées": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.demandes_clôturées": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.demandes_clôturées"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.demandes_clôturées"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_demandes_clôturées"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_délai_moyen_de_clôture_jours": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.délai_moyen_de_clôture_jours": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.délai_moyen_de_clôture_jours"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.délai_moyen_de_clôture_jours"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_délai_moyen_de_clôture_jours"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_financement_accordé": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.financement_accordé": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.financement_accordé"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.financement_accordé"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_financement_accordé"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_financement_demandé": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.financement_demandé": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.financement_demandé"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.financement_demandé"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_financement_demandé"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_montant_des_opérations": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.montant_des_opérations": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.montant_des_opérations"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.montant_des_opérations"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_montant_des_opérations"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_taux_daccord": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.taux_daccord": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.taux_daccord"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.taux_daccord"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_taux_daccord"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_demandes_sans_décision": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.demandes_sans_décision": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.demandes_sans_décision"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.demandes_sans_décision"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_demandes_sans_décision"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_demandes_refusées": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.demandes_refusées": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.demandes_refusées"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.demandes_refusées"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_demandes_refusées"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_demandes_accordées": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.demandes_accordées": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.demandes_accordées"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.demandes_accordées"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_demandes_accordées"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_nombre_de_clients": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.nombre_de_clients": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.nombre_de_clients"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.nombre_de_clients"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_nombre_de_clients"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_nombre_de_demandes": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.nombre_de_demandes": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.nombre_de_demandes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.nombre_de_demandes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_nombre_de_demandes"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_écart_décision___règle": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.écart_décision___règle": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.écart_décision___règle"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.écart_décision___règle"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_écart_décision___règles"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_motif_de_la_règle": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.motif_de_la_règle": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.motif_de_la_règle"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.motif_de_la_règle"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_motif_de_la_règles"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_décision": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.décision": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.décision"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.décision"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_décisions"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_âge_à_la_demande": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.âge_à_la_demande": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.âge_à_la_demande"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.âge_à_la_demande"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_âge_à_la_demandes"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_score_emprunteur": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.score_emprunteur": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.score_emprunteur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.score_emprunteur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_score_emprunteurs"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_montant_prêté": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.montant_prêté": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.montant_prêté"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.montant_prêté"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_montant_prêté"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "demandes_de_pret.montant_prêté"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "montant_prêté_indicates_how_expensive_demandes_de_prets_are"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_apport": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.apport": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.apport"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.apport"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_apports"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "demandes_de_pret.apport"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "apport_indicates_how_expensive_demandes_de_prets_are"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_accord": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.accord": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.accord"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.accord"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_accords"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_date_de_cloture": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.date_de_cloture": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.date_de_cloture"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.date_de_cloture"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_date_de_clotures"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_date_de_demande": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.date_de_demande": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.date_de_demande"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.date_de_demande"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_date_de_demandes"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_durée": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.durée": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.durée"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.durée"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_durées"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_montant_opération": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.montant_opération": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.montant_opération"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.montant_opération"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_montant_opérations"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "demandes_de_pret.montant_opération"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "montant_opération_indicates_how_expensive_demandes_de_prets_are"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_numéro_demande_de_prêt": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "demandes_de_pret.numéro_demande_de_prêt": {
+			          "Target": {
+			            "Entity": "demandes_de_pret.numéro_demande_de_prêt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret.numéro_demande_de_prêt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_numéro_demande_de_prêts"
+			        }
+			      ]
+			    },
+			    "agence_has_ville": {
+			      "Binding": {
+			        "ConceptualEntity": "Agences"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "agence": {
+			          "Target": {
+			            "Entity": "agence"
+			          }
+			        },
+			        "agence.ville": {
+			          "Target": {
+			            "Entity": "agence.ville"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "agence"
+			            },
+			            "Object": {
+			              "Role": "agence.ville"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "agences_have_ville"
+			        }
+			      ]
+			    },
+			    "agence_has_localisation": {
+			      "Binding": {
+			        "ConceptualEntity": "Agences"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "agence": {
+			          "Target": {
+			            "Entity": "agence"
+			          }
+			        },
+			        "agence.localisation": {
+			          "Target": {
+			            "Entity": "agence.localisation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "agence"
+			            },
+			            "Object": {
+			              "Role": "agence.localisation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "agences_have_localisations"
+			        }
+			      ]
+			    },
+			    "agence_has_numéro_dagence": {
+			      "Binding": {
+			        "ConceptualEntity": "Agences"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "agence": {
+			          "Target": {
+			            "Entity": "agence"
+			          }
+			        },
+			        "agence.numéro_dagence": {
+			          "Target": {
+			            "Entity": "agence.numéro_dagence"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "agence"
+			            },
+			            "Object": {
+			              "Role": "agence.numéro_dagence"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "agences_have_numéro_dagences"
+			        }
+			      ]
+			    },
+			    "demandes_de_pret_has_calendrier": {
+			      "Binding": {
+			        "ConceptualEntity": "Demandes de pret"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "demandes_de_pret": {
+			          "Target": {
+			            "Entity": "demandes_de_pret"
+			          }
+			        },
+			        "calendrier": {
+			          "Target": {
+			            "Entity": "calendrier"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "demandes_de_pret"
+			            },
+			            "Object": {
+			              "Role": "calendrier"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "demandes_de_prets_have_calendriers"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier"
+			            },
+			            "Object": {
+			              "Role": "demandes_de_pret"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendriers_have_demandes_de_prets"
+			        }
+			      ]
+			    },
+			    "calendrier_année___trimestre___mois___jour_has_année": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.année___trimestre___mois___jour": {
+			          "Target": {
+			            "Entity": "calendrier.année___trimestre___mois___jour"
+			          }
+			        },
+			        "calendrier.année___trimestre___mois___jour.année": {
+			          "Target": {
+			            "Entity": "calendrier.année___trimestre___mois___jour.année"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.année___trimestre___mois___jour"
+			            },
+			            "Object": {
+			              "Role": "calendrier.année___trimestre___mois___jour.année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "année___trimestre___mois___jour_have_années"
+			        }
+			      ]
+			    },
+			    "calendrier_année___trimestre___mois___jour_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.année___trimestre___mois___jour": {
+			          "Target": {
+			            "Entity": "calendrier.année___trimestre___mois___jour"
+			          }
+			        },
+			        "calendrier.année___trimestre___mois___jour.trimestre": {
+			          "Target": {
+			            "Entity": "calendrier.année___trimestre___mois___jour.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.année___trimestre___mois___jour"
+			            },
+			            "Object": {
+			              "Role": "calendrier.année___trimestre___mois___jour.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "année___trimestre___mois___jour_have_trimestres"
+			        }
+			      ]
+			    },
+			    "calendrier_année___trimestre___mois___jour_has_mois": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.année___trimestre___mois___jour": {
+			          "Target": {
+			            "Entity": "calendrier.année___trimestre___mois___jour"
+			          }
+			        },
+			        "calendrier.année___trimestre___mois___jour.mois": {
+			          "Target": {
+			            "Entity": "calendrier.année___trimestre___mois___jour.mois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.année___trimestre___mois___jour"
+			            },
+			            "Object": {
+			              "Role": "calendrier.année___trimestre___mois___jour.mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "année___trimestre___mois___jour_have_moises"
+			        }
+			      ]
+			    },
+			    "calendrier_année___trimestre___mois___jour_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendrier"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendrier.année___trimestre___mois___jour": {
+			          "Target": {
+			            "Entity": "calendrier.année___trimestre___mois___jour"
+			          }
+			        },
+			        "calendrier.année___trimestre___mois___jour.date": {
+			          "Target": {
+			            "Entity": "calendrier.année___trimestre___mois___jour.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendrier.année___trimestre___mois___jour"
+			            },
+			            "Object": {
+			              "Role": "calendrier.année___trimestre___mois___jour.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "année___trimestre___mois___jour_have_dates"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

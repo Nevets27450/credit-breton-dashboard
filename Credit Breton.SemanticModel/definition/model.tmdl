@@ -1,0 +1,27 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Apport","Agences","Demandes de pret","Situation famille","Situation pro"]
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_ProTooling = ["MCP-PBIModeling","DevMode"]
+
+ref table Apport
+ref table Agences
+ref table 'Demandes de pret'
+ref table 'Situation famille'
+ref table 'Situation pro'
+ref table Calendrier
+
+ref role 'Directeur d''agence de St Brieuc'
+
+ref cultureInfo fr-FR
+
+
+ref expression CheminSource

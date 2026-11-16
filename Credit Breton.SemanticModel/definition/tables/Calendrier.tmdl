@@ -1,0 +1,69 @@
+table Calendrier
+	lineageTag: 2750731b-5408-4123-b901-af5201a207b1
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: dd/MM/yyyy
+		lineageTag: 96ed4e11-a7aa-4112-a402-813c64a86f3b
+		summarizeBy: none
+		sourceColumn: [Date]
+
+	column Année = YEAR([Date])
+		dataType: int64
+		formatString: 0
+		lineageTag: 30dacd51-a0ac-40ab-bdb7-bb99464218f8
+		summarizeBy: none
+
+	column 'Numéro mois' = MONTH([Date])
+		dataType: int64
+		isHidden
+		lineageTag: 5e51adb4-3b1e-4641-867d-a5863e253a6c
+		summarizeBy: none
+
+	column Mois = FORMAT([Date], "mmmm", "fr-FR")
+		dataType: string
+		lineageTag: a44f7cc7-3380-433f-9f5b-6631b37cb17d
+		summarizeBy: none
+		sortByColumn: 'Numéro mois'
+
+	column Année-mois = FORMAT([Date], "yyyy-MM")
+		dataType: string
+		lineageTag: dd50e3f4-27b7-4c43-9c5a-f86bad304ae2
+		summarizeBy: none
+
+	column Trimestre = "T" & QUARTER([Date])
+		dataType: string
+		lineageTag: 68d847fb-8fae-4147-8f15-1ceba76de63c
+		summarizeBy: none
+
+	column 'Début de mois' = DATE(YEAR([Date]), MONTH([Date]), 1)
+		dataType: dateTime
+		formatString: MMM yyyy
+		lineageTag: 7b3b7cb3-0e5f-4c30-bbbf-3d150195d10e
+		summarizeBy: none
+
+	hierarchy 'Année / trimestre / mois / jour'
+		lineageTag: c4f3828c-8f98-41df-8362-f1feb0482169
+
+		level Année
+			lineageTag: 109cc0a5-a1ce-45e3-be42-bb589d8d4c7d
+			column: Année
+
+		level Trimestre
+			lineageTag: 13368314-5230-4445-8e46-474d2a41a0e4
+			column: Trimestre
+
+		level Mois
+			lineageTag: a2865f99-8a00-441f-9276-0cf3aaa33256
+			column: Mois
+
+		level Date
+			lineageTag: 3eacfff2-1b4e-4a2c-8a54-2bf66759edd6
+			column: Date
+
+	partition Calendrier = calculated
+		mode: import
+		source = VAR Dates = UNION(SELECTCOLUMNS('Demandes de pret', "D", [Date de demande]), SELECTCOLUMNS(FILTER('Demandes de pret', NOT ISBLANK([Date de cloture])), "D", [Date de cloture])) RETURN CALENDAR(DATE(YEAR(MINX(Dates,[D])),1,1),DATE(YEAR(MAXX(Dates,[D])),12,31))
+

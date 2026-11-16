@@ -1,0 +1,7 @@
+role 'Directeur d''agence de St Brieuc'
+	modelPermission: read
+
+	tablePermission Agences = [Numéro d'agence] == 4 && [Ville] == "Saint-Brieuc"
+
+	annotation PBI_Id = a31f28aff73945029534d861b8658b93
+

@@ -1,0 +1,44 @@
+table Apport
+	isHidden
+	lineageTag: c9a884f9-1e6d-476f-a14e-86cfd7e6c860
+
+	column 'Numéro demande de prêt'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e82337f7-a182-4371-89b3-0adafe894295
+		summarizeBy: none
+		sourceColumn: Numéro demande de prêt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Apport
+		dataType: double
+		isHidden
+		lineageTag: 1accf82f-c5bc-4310-aff3-2a95af32193b
+		summarizeBy: sum
+		sourceColumn: Apport
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Apport = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents(CheminSource), null, true),
+				    Apport_Sheet = Source{[Item="Apport",Kind="Sheet"]}[Data],
+				    #"En-têtes promus" = Table.PromoteHeaders(Apport_Sheet, [PromoteAllScalars=true]),
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"Numéro demande de prêt", Int64.Type}, {"Apport", type number}})
+				in
+				    #"Type modifié"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

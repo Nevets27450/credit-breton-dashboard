@@ -1,0 +1,21 @@
+relationship AutoDetected_f4db4ad5-fae0-4a5a-abe7-141f5478eb96
+	fromColumn: 'Demandes de pret'.'Numéro d''agence'
+	toColumn: Agences.'Numéro d''agence'
+
+relationship AutoDetected_8d0fb378-a146-41d8-bfbb-2e0553d67666
+	fromColumn: 'Demandes de pret'.'Numéro client'
+	toColumn: 'Situation pro'.'Numéro client'
+
+relationship fd379d82-0cde-c90b-36e8-5f01e650a9a9
+	fromColumn: 'Demandes de pret'.'Numéro client'
+	toColumn: 'Situation famille'.ID_Client
+
+relationship c45733d0-519b-4b7b-9bef-2469d41270aa
+	fromColumn: 'Demandes de pret'.'Date de demande'
+	toColumn: Calendrier.Date
+
+relationship 256cc4f4-f8e4-4430-add3-0acfd65f6f93
+	isActive: false
+	fromColumn: 'Demandes de pret'.'Date de cloture'
+	toColumn: Calendrier.Date
+

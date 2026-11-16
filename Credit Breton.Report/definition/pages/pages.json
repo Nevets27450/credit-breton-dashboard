@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
+  "pageOrder": [
+    "cbwelcomepage20261116",
+    "dad29636ece90dab4742",
+    "781bc2405d26b78cf245",
+    "dfea41a86c7080836b76",
+    "ea66f75c15a6e8c2709b",
+    "dfb3257745bbaefa11af"
+  ],
+  "activePageName": "cbwelcomepage20261116"
+}

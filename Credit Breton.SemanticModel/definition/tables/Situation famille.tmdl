@@ -1,0 +1,82 @@
+table 'Situation famille'
+	lineageTag: 301ad3d9-4aa1-4586-82d6-6ed420117c18
+
+	column ID_Client
+		dataType: int64
+		formatString: 0
+		lineageTag: d57c9651-be05-4f0c-8315-e1ad12fa5e31
+		summarizeBy: none
+		sourceColumn: ID_Client
+
+		annotation SummarizationSetBy = Automatic
+
+	column Nom
+		dataType: string
+		lineageTag: d8a3a011-be22-4965-b75d-46ba627e0965
+		summarizeBy: none
+		sourceColumn: Nom
+
+		annotation SummarizationSetBy = Automatic
+
+	column Prénom
+		dataType: string
+		lineageTag: 27f51427-ecb4-42e2-a3a8-ce73326d8d0e
+		summarizeBy: none
+		sourceColumn: Prénom
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date de naissance'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fa9c3457-5dba-4ef9-9e6f-b717e1e46a06
+		summarizeBy: none
+		sourceColumn: Date de naissance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Situation familliale'
+		dataType: string
+		lineageTag: c157c678-9523-4161-a7a3-a5670ddf4708
+		summarizeBy: none
+		sourceColumn: Situation familliale
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre d''enfants à charge'
+		dataType: double
+		formatString: 0
+		lineageTag: c2f24860-b008-4907-b752-363b7296b5ea
+		summarizeBy: none
+		sourceColumn: Nombre d'enfants à charge
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age_Client = VAR N = [Date de naissance] VAR A = TODAY() RETURN IF(ISBLANK(N) || N > A, BLANK(), YEAR(A)-YEAR(N)-IF(MONTH(A)*100+DAY(A)<MONTH(N)*100+DAY(N),1,0))
+		isHidden
+		formatString: 0
+		lineageTag: 9a4ecbb6-99ac-4c87-bc60-e4a24dfc1ba8
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Situation famille' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents(CheminSource), null, true),
+				    #"Situation famille_Sheet" = Source{[Item="Situation famille",Kind="Sheet"]}[Data],
+				    #"En-têtes promus" = Table.PromoteHeaders(#"Situation famille_Sheet", [PromoteAllScalars=true]),
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"ID_Client", Int64.Type}, {"Nom", type text}, {"Prénom", type text}, {"Date de naissance", type date}, {"Situation familliale", type text}, {"Nombre d'enfants à charge", Int64.Type}}),
+				    #"Valeur remplacée" = Table.ReplaceValue(#"Type modifié","PACS","Pacsé",Replacer.ReplaceText,{"Situation familliale"}),
+				    #"Valeur remplacée1" = Table.ReplaceValue(#"Valeur remplacée",30,3,Replacer.ReplaceValue,{"Nombre d'enfants à charge"}),
+				    #"Valeur remplacée2" = Table.ReplaceValue(#"Valeur remplacée1",20,2,Replacer.ReplaceValue,{"Nombre d'enfants à charge"})
+				in
+				    #"Valeur remplacée2"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

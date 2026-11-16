@@ -1,0 +1,12 @@
+# Données et paramètres locaux
+**/.pbi/
+*.pbix
+*.pbit
+*.abf
+*.xlsx
+*.xls
+*.csv
+*.tmp
+~$*
+.env
+.env.*

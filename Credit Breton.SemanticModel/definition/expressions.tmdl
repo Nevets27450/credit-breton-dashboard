@@ -1,0 +1,2 @@
+expression CheminSource = "C:\Data\Dataset_cours_Power_BI.xlsx" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	annotation PBI_ResultType = Text

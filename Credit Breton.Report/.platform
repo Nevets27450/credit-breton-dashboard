@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Credit Breton"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ec0dd2a1-1116-4414-8ccf-a50fce2a04e0"
+  }
+}
